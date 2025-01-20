@@ -45,30 +45,6 @@ window.addEventListener('keydown', (e) => {
 
 
 
-
-const container = document.getElementById('video-container');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-
-let scrollPosition = 0;
-const videoWidth = container.querySelector('.video').offsetWidth;
-const gap = 20; // Same as CSS gap
-const totalWidth = container.scrollWidth;
-const visibleWidth = container.offsetWidth;
-
-prevBtn.addEventListener('click', () => {
-  scrollPosition = Math.max(scrollPosition - (videoWidth + gap) * 4, 0);
-  container.style.transform = `translateX(-${scrollPosition}px)`;
-});
-
-nextBtn.addEventListener('click', () => {
-  scrollPosition = Math.min(
-    scrollPosition + (videoWidth + gap) * 4,
-    totalWidth - visibleWidth
-  );
-  container.style.transform = `translateX(-${scrollPosition}px)`;
-});
-
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.getElementById('menu-button');
