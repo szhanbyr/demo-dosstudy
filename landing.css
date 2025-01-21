@@ -1,7 +1,5 @@
 *{
-    margin-bottom: 0;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0;
     padding: 0;
 }
 
@@ -10,26 +8,138 @@ html {
 }
 
 
+/* Enhanced Mobile Responsiveness */
 @media (max-width: 768px) {
     .container, .services-container, .contact-container {
         flex-direction: column;
         text-align: center;
+        padding: 0 15px;
     }
 
-    .svg-bg {
+    .svg-bg, .image-content {
         display: none;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
     }
 
     .header-container {
         flex-wrap: wrap;
         text-align: center;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    .text-content {
+        padding: 0 15px;
+    }
+
+    .text-content p {
+        font-size: 16px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .services-section, .how-we-work {
+        margin: 40px 15px !important;
+    }
+
+    .service {
+        flex: 1 0 100% !important;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-button, .whatsapp-button, .leave-request {
+        font-size: 18px !important;
+        padding: 8px 16px !important;
+    }
+
+    .footer {
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    .footer-column {
+        min-width: 100%;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column ul li {
+        font-size: 14px;
+    }
+
+    .advantage {
+        flex: 1 0 100%;
+    }
+
+    .advantage-title {
+        font-size: 18px;
+    }
+
+    .advantage-description {
+        font-size: 14px;
+    }
+
+    .video {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .video video {
+        height: 200px;
+    }
+
+    .carousel-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .programs-section .service {
+        padding: 15px;
+    }
+
+    .programs-section h4 {
+        font-size: 20px;
+    }
+
+    .catalog-tab {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .hero-section {
+        padding: 20px;
+    }
+
+    .program-highlights {
+        gap: 10px;
+    }
+
+    .highlight-item {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .features-list li {
+        font-size: 14px;
+        padding: 8px 0;
     }
 }
+
+
 header {
     padding: 20px;
     margin: 40px;
